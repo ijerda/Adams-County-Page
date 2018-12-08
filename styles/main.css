@@ -1,0 +1,696 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+/*----------------- BODY -----------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+
+header,
+nav,
+main,
+footer {
+  margin: 0 auto;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: url("/images/logo.png") white no-repeat center center;
+  z-index: 99999;
+}
+
+/*----------------- HEADER -----------------*/
+header {
+  background: #023656;
+}
+header img {
+  padding-top: 30px;
+  width: 20%;
+  height: auto;
+  display: flex;
+}
+header h3 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  background-color: #023656;
+}
+header .logo {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*----------------- HEADER NAV -----------------*/
+.hamburger {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #fff;
+  border: 1px solid #fff;
+  font-size: 25px;
+  color: #4c4c4c;
+  box-shadow: 1px 1px 2px 1px #4c4c4c;
+}
+
+.navigation {
+  list-style: none;
+  padding-left: 0;
+  margin-top: -20px;
+  box-shadow: 2px 2px 2px #4c4c4c;
+}
+.navigation li {
+  display: none;
+}
+
+.navigation.responsive {
+  position: relative;
+}
+.navigation.responsive li {
+  background-color: #023656;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.navigation.responsive li a {
+  text-align: center;
+  color: #fff;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.navigation.responsive li.active a {
+  color: #fff;
+  background-color: #035477;
+  font-weight: bold;
+}
+.navigation.responsive li a:hover {
+  color: #fff;
+  background-color: #035477;
+  font-weight: bold;
+}
+
+/*----------------- MAIN -----------------*/
+main {
+  padding: 25px;
+  background: #fff;
+  color: #4c4c4c;
+}
+main h2 {
+  color: #035477;
+  margin-top: 0px;
+  font-family: "Raleway", sans-serif;
+}
+main h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+}
+
+article h3 {
+  font-size: 35px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  color: #035477;
+  font-size: 40px;
+  margin: 0px;
+}
+
+.img-article {
+  width: 100%;
+  height: auto;
+  box-shadow: 2px 2px 2px #4c4c4c;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+span {
+  font-weight: normal;
+}
+
+.btn {
+  padding: 13px;
+  margin: 10px 0px;
+  color: #fff;
+  background: #023656;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  margin: 0px 0px 40px 0px;
+}
+aside h4 {
+  margin: 0;
+}
+aside ul {
+  margin: 10px 0px;
+}
+aside div p {
+  margin: 8px 0px;
+}
+
+/*----------------- PORTFOLIO BOXES -----------------*/
+.desktop-row {
+  margin-top: 40px;
+}
+
+.portfolio-item {
+  background-color: #4c4c4c;
+  margin: 20px auto;
+  max-width: 840px;
+  width: 70%;
+}
+.portfolio-item img {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+}
+.portfolio-item h4 {
+  padding: 10px 20px 0px 20px;
+  color: #fff;
+  margin-top: 10px;
+}
+.portfolio-item p {
+  padding: 10px 20px 20px 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.portfolio-item:hover {
+  box-shadow: 1px 5px 10px 1px #383838;
+}
+
+/*----------------- PORTFOLIO PAGES -----------------*/
+.portfoliopiece-main h2 {
+  margin: 0px;
+}
+.portfoliopiece-main p {
+  margin-top: 0px;
+}
+.portfoliopiece-main img {
+  border: 1px solid #858585;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.column img {
+  max-width: 60rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#disclaimer {
+  display: none;
+}
+
+.projectimgs img {
+  max-width: 60rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*----------------- LIGHTBOX IMAGES -----------------*/
+a.lightbox img {
+  border: 3px solid white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin: 20px 10px 20px 0px;
+}
+
+.lightbox-target {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.lightbox-target img {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 0%;
+  max-width: 0%;
+  border: 3px solid white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+a.lightbox-close {
+  display: block;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  background: white;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: -80px;
+  right: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+a.lightbox-close:before {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top: 10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+a.lightbox-close:after {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top: 10px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.lightbox-target:target img {
+  max-height: 90%;
+  max-width: 90%;
+}
+
+.lightbox-target:target a.lightbox-close {
+  top: 0px;
+}
+
+/*----------------- FOOTER -----------------*/
+footer {
+  clear: both;
+  font-family: Georgia, serif;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  background-color: #023656;
+  border-top: 3px solid #4c4c4c;
+}
+footer p a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+footer p a:active {
+  font-weight: bold;
+  background-color: #035477;
+}
+footer p a:hover {
+  font-weight: bold;
+  background-color: #035477;
+}
+
+#footertitle {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.socialmedia {
+  font-size: 30px;
+}
+
+.fa {
+  padding: 10px;
+  width: 50px;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/*-------------- TABLET VIEW --------------*/
+@media only screen and (min-width: 37.5em) {
+  .top-header {
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 0px;
+  }
+
+  header img {
+    display: flex;
+  }
+
+  /*-------------- HEADER NAV --------------*/
+  .navigation {
+    text-align: center;
+    background-color: #023656;
+    padding-bottom: 20px;
+    margin-top: -20px;
+    box-shadow: 2px 2px 2px #4c4c4c;
+  }
+  .navigation li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+  }
+  .navigation li a {
+    color: #fff;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .navigation li.active a {
+    color: #fff;
+    background-color: #035477;
+    font-weight: bold;
+  }
+  .navigation li a:hover {
+    color: #fff;
+    background-color: #035477;
+    font-weight: bold;
+  }
+
+  .responsive {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  /*-------------- MAIN --------------*/
+  main {
+    max-width: 880px;
+    margin: 0 auto;
+  }
+  main h2 {
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+  }
+  main article {
+    padding-top: 10px;
+  }
+
+  .img-article {
+    width: 350px;
+    height: auto;
+    float: right;
+    margin: 7px;
+  }
+}
+/*-------------- DESKTOP VIEW --------------*/
+@media only screen and (min-width: 64em) {
+  /*-------------- HEADER --------------*/
+  header img {
+    padding-bottom: 40px;
+    padding-right: 10px;
+  }
+  header h3 {
+    margin-top: -10px;
+  }
+
+  .navigation {
+    box-shadow: none;
+  }
+
+  /*-------------- MAIN/BODY --------------*/
+  body {
+    font-size: 1.05rem;
+    background: #fff;
+    max-width: 1100px;
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  #currentdate {
+    color: #ffffff;
+  }
+
+  /*-------------- PROFILE --------------*/
+  .margin-profile {
+    margin: 270px 0px 0px 0px;
+  }
+
+  aside {
+    width: 40%;
+    padding-right: 0.5rem;
+    margin-right: 2rem;
+    float: left;
+    box-shadow: inset -5px 1px 1px -5px #4c4c4c;
+    color: #383838;
+  }
+  aside li {
+    margin: 0px 10px 0px 10px;
+  }
+  aside h2 {
+    margin: 20px 10px 0px 10px;
+  }
+  aside h4 {
+    margin: 10px 10px 0px 10px;
+  }
+  aside p {
+    margin: 5px 10px 0px 10px;
+    font-style: italic;
+  }
+  aside div p {
+    margin: 8px 10px;
+  }
+
+  aside .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #profilepage-margin {
+    margin: 0px 200px;
+  }
+
+  .btn:hover {
+    background: #383838;
+    text-decoration: underline;
+  }
+
+  .margin {
+    margin: 400px 0px 0px 0px;
+  }
+
+  /*-------------- PORTFOLIO --------------*/
+  .portfolio-wrapper {
+    margin: -40px 0px 0px 0px;
+  }
+
+  .portfolio-item a {
+    color: #fff;
+  }
+
+  .portfolio {
+    margin: 50px 0 80px 0;
+  }
+
+  .portfolio .portfolio-item {
+    float: left;
+  }
+
+  .portfolio .portfolio-item .thumb {
+    position: relative;
+    display: block;
+  }
+
+  .portfolio .portfolio-item .thumb img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .portfolio-item:hover {
+    transform: scale(1.05);
+  }
+
+  .portfolio-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .portfolio-item:hover .portfolio-hover,
+.portfolio-item:hover .portfolio-hover .portfolio-description,
+.portfolio-item:hover .portfolio-hover .action-btn {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  .portfolio-item:hover .portfolio-hover .portfolio-description {
+    top: 50%;
+  }
+
+  .portfolio-hover .portfolio-description {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: translateY(-55%);
+    -ms-transform: translateY(-55%);
+    transform: translateY(-55%);
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+    padding: 10%;
+  }
+
+  /*gutter*/
+  .portfolio.gutter .portfolio-item {
+    padding: 20px;
+  }
+
+  /*portfolio 3 grid*/
+  .portfolio.col-3 .portfolio-item {
+    width: 33.3333333%;
+  }
+
+  .portfolio-item {
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .portfolio-item img {
+    width: 60%;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /*----------------- PORTFOLIO PAGES -----------------*/
+  .portfoliopiece-main h2 {
+    margin: 0px;
+  }
+  .portfoliopiece-main p {
+    margin-top: 0px;
+  }
+  .portfoliopiece-main img {
+    border: 1px solid #858585;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .column {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  .column img {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .imgleft {
+    margin-right: 30px;
+  }
+  .imgleft img {
+    max-width: 30rem;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .imgright {
+    margin-left: 30px;
+  }
+  .imgright img {
+    max-width: 30rem;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  #disclaimer {
+    display: flex;
+    font-weight: bold;
+  }
+
+  /*----------------- LIGHTBOX IMAGES -----------------*/
+  .projectimgs {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+  .projectimgs img {
+    max-height: 100%;
+    width: auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

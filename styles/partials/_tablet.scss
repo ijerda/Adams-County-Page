@@ -1,0 +1,94 @@
+/*-------------- TABLET VIEW --------------*/
+
+@media only screen and (min-width: 37.5em) {
+
+    .top-header {
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 0px;
+    }
+
+    header img {
+        display: flex;
+    }
+
+
+    /*-------------- HEADER NAV --------------*/
+    .navigation {
+        text-align: center;
+        background-color: #023656;
+        padding-bottom: 20px;
+        margin-top: -20px;
+        box-shadow: 2px 2px 2px #4c4c4c;
+
+        li {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: inline-flex;
+        }
+
+        li a {
+            color: #fff;
+            text-align: center;
+            padding: .75rem;
+            text-decoration: none;
+            font-size: .9rem;
+        }
+
+        li.active a {
+            color: #fff;
+            background-color: #035477;
+            font-weight: bold;
+        }
+
+        li a:hover {
+            color: #fff;
+            background-color: #035477;
+            font-weight: bold;
+        }
+    }
+
+    .responsive {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .hamburger {
+        display: none;
+
+    }
+
+
+    /*-------------- MAIN --------------*/
+    main {
+        max-width: 880px;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 30px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        article {
+            padding-top: 10px;
+        }
+    }
+
+
+    .img-article {
+        width: 350px;
+        height: auto;
+        float: right;
+        margin: 7px;
+    }
+
+
+
+
+}
+
+// TABLET CLOSING TAG - DO NOT DELETE
